@@ -1,3 +1,42 @@
 .fetch-link {
     padding: 3px;
 }
+
+h1 {
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#header {
+    text-align: center;
+    margin: 0px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+#main > div {
+    width: fit-content;    
+    border: 2px solid;
+    padding: 10px;
+}
+
+details > p:nth-child(odd) {
+    background-color: #b6b6b7;
+}
+
+details > p:nth-child(even) {
+    background-color: #dbdbdb;
+}
+
+.fetch-link {
+    padding-left: 30px;
+}
