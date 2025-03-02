@@ -18,7 +18,7 @@ shows.forEach(({ title, episodes, url, imgsrc }) => {
     ).join("");*/
     const episodeLinks = [...Array(episodes)].map((_, i) => {
         const episodeUrl = url.replace('${episodes}', i + 1); 
-        return `<p class=fetch-link data-url="${episodeUrl}">Episode ${i + 1}</p>`
+        return `<span class=fetch-link data-url="${episodeUrl}">Episode ${i + 1}</span><p></p>`
     }).join("");
 
     showDiv.innerHTML = `
